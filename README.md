@@ -1,11 +1,11 @@
 # Installation guide
 ### 1. Pre-installation
 
-#### 1.1 Acquire an installation image
-Visit the  [Download](https://archlinux.org/download/)  page and, depending on how you want to boot, acquire the ISO file or a netboot image, and the respective  [GnuPG](https://wiki.archlinux.org/title/GnuPG "GnuPG")  signature.
+#### 1.1 Download Arch Linux ISO
+Go to the [Arch Linux Downloads](https://archlinux.org/download/) page and download the Arch Linux ISO image.
 
 #### 1.2 Prepare an installation medium
-The ISO can be supplied to the target machine via a  [USB flash drive](https://wiki.archlinux.org/title/USB_flash_installation_medium "USB flash installation medium"), an  [optical disc](https://wiki.archlinux.org/title/Optical_disc_drive#Burning "Optical disc drive")  or a network with  [PXE](https://wiki.archlinux.org/title/PXE "PXE"): follow the appropriate article to prepare yourself an installation medium from the ISO file.
+**Step 1 :** Google It suck
 
 #### 1.3 Set the consolefont
 [Console fonts](https://wiki.archlinux.org/title/Console_fonts "Console fonts")  are located in  `/usr/share/kbd/consolefonts/`  and can likewise be set with  [setfont(8)](https://man.archlinux.org/man/setfont.8)  omitting the path and file extension. For example, to use one of the largest fonts suitable for  [HiDPI screens](https://wiki.archlinux.org/title/HiDPI#Linux_console_(tty) "HiDPI"), run:
@@ -41,6 +41,7 @@ When recognized by the live system, disks are assigned to a [block device](https
 $ lsblk
 ```
 The following [partitions](https://wiki.archlinux.org/title/Partition "Partition") are **required** for a chosen device:
+
 __For UEFI with GPT__:
 -   Root partition (`/`): Remainder of device (at least 23–32 GiB)
 -   EFI system partition: 1 GiB
